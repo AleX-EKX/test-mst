@@ -1,0 +1,152 @@
+
+  @media (max-width: 1199px) {
+    .advantages-img:last-child{
+        display: none;
+    }
+    .advantages-section__info-block{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .form-section__container .form-block{
+        padding: 2.469rem 0rem 2.469rem 2.375rem;
+    }
+    .form-section{
+        padding: 2.5rem;
+    }
+  }
+  @media (max-width: 992px) {
+    .img-baner{
+        display: none;
+    }
+    .banner-section__container__info-block{
+        padding-top: 3rem;
+    }
+    .pl{
+        padding-left: 5rem;
+    }
+    .banner-section__container {
+        display: block;
+    }
+        
+  }
+@media (max-width: 768px) {
+    html {
+      font-size: 12px;
+    }
+    .pl{
+        padding-left: 1.5rem;
+    }
+    .pt{
+        padding-top: 2.25rem;
+    }
+    .footer-block,.form-section{
+        padding-right: 1.5rem;;
+    }
+  }
+
+
+
+  @media (max-width: 768px) {
+    .banner-section{
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    ul {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .burger {
+      display: block;
+    }
+  
+    ul.show {
+      display: flex;
+    }
+  
+    /* Стиль для бургер-меню, когда оно превращается в крестик */
+    .burger.open .burger-line:nth-child(1) {
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0;
+    }
+    .burger.open{
+        position: absolute;
+        left: -3rem;
+    }
+  
+    .burger.open .burger-line:nth-child(2) {
+      opacity: 0;
+    }
+    .header-link{
+        display: none;
+    }
+    .header-link.show{
+        display: block;
+    }
+    .burger.open .burger-line:nth-child(3) {
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 0;
+    }
+    .header-link{
+        padding: 0;
+    }
+    .img-block-baner,.img-baner{
+        max-width: 100%;
+        display: block;
+    }
+
+
+
+    .form-section__container .form-block,.header-nav {
+        padding: 1rem;
+    }
+    .header-nav{
+        padding-left: 1.5rem;
+        align-items: self-start;
+    }
+    .form-section__container{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .form-section__container__img-block{
+        width: 100%;
+    }
+    .advantages-section__info-block{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .advantages-img{
+        display: none;
+    }
+    .form .input{
+        padding: 0.906rem 1.25rem;
+    }
+    .form-btn,.btn-one,.btn-two,.btn-three{
+        padding: 1rem 0;
+    }
+    .banner-section__container{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+    .banner-section__container__info-block{
+        max-width: 100%;
+        gap: 1rem;
+        padding-top: 3rem;
+    }
+    .banner-section__container__info-block .title{
+        font-size: 3rem;
+    }
+    .banner-section__container__info-block .subtitle{
+        font-size: 2rem;
+    }
+    .description-block__price__bold{
+        font-size: 1.5rem;
+    }
+    .description-block__price__text,.btn-one a,.btn-two a,.form-btn,.btn-three a{
+        font-size: 1rem;
+    }
+  }

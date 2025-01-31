@@ -1,0 +1,419 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+
+  html {
+    font-size: 16px;
+  }
+  
+  
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none; 
+}
+
+@font-face {
+    font-family: Prata;
+    src: url('./fonts/Prata-Regular.ttf') format('ttf'); 
+}
+.prata{
+    font-family: Prata;
+}
+.pl{
+    padding-left: 10.188rem;
+}
+.ml{
+    margin-left: 10.188rem;
+}
+.pt{
+    padding-top: 6.25rem;
+}
+.bg-black{
+    background-color: #282829;
+}
+.header-logo{
+    font-size: 2.25rem;
+    color: white;
+}
+
+
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+    
+}
+.header.scrolled {
+    background-color: rgba(240, 248, 255, 0.219);
+  }
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10.188rem;
+    max-width: 48.938rem;
+}
+.header-link{
+    display: flex;
+    gap: 1.813rem;
+    text-transform: uppercase;
+    padding: 1.3rem 0;
+}
+.header-block{
+    position: relative;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+    width: 1.875rem;
+    height: 1.875rem;
+    position: relative;
+    top: 1rem;
+  }
+  
+  .burger-line {
+    width: 100%;
+    height: 0.213rem;
+    background-color: white;
+    margin: 0.25rem 0;
+    transition: all 0.3s ease;
+  }
+
+.banner-section{
+    background-color: #222222;
+    /* padding-top: 1.875rem; */
+    /* padding-left: 10.188rem; */
+}
+.img-block-baner{
+    width: 100%;
+    max-width: 47.563rem;
+    height: 100%;
+}
+.img-baner{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    max-height: 63.063rem;
+    aspect-ratio: 1 / 3.9;
+    max-width: 47.563rem;
+}
+.banner-section__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 5.625rem;
+}
+.banner-section__container__info-block{
+    padding-bottom: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    max-width: 33.563rem;
+    width: 100%;
+}
+.banner-section__container__info-block .title{
+    font-size: 5rem;
+    font-weight: 400;
+}
+.banner-section__container__info-block .subtitle{
+    font-size: 3.125rem;
+    font-weight: 400;
+}
+.banner-section__container__info-block .description-block{
+    padding-top: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.188rem;
+}
+.description-block__price{
+    display: flex;
+    align-items: center;
+    gap: 1.063rem;
+    background-color: #282829B2;
+    border-radius: 0.25rem;
+}
+.description-block__price__text{
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 0.938rem;
+}
+.description-block__price__bold{
+    font-size: 2.5rem;
+}
+.btn-one{
+    max-width: 11.938rem;
+    width: 100%;
+    border-radius: .25rem;
+    background-color: white;
+    padding: 2rem 0;
+}
+.btn-two{
+    width: 100%;
+    border-radius: .25rem;
+    background-color: white;
+    padding: 2rem 0;
+}
+.btn-three{
+    max-width: 11.25rem;
+    width: 100%;
+    border-radius: .25rem;
+    background-color: white;
+    padding: 2rem 0;
+}
+.btn-three a{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #222222;
+    letter-spacing: 0.04em;
+}
+.btn-two a{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #222222;
+    letter-spacing: 0.04em;
+}
+.btn-one a{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222222;
+    letter-spacing: 0.04em;
+
+}
+button:hover{
+    background-color: #D5C9BE;
+    cursor: pointer;
+}
+.form-btn:hover{
+    background-color: rgb(34, 21, 6);
+}
+
+/* ---------- ADVANTAGES ---------- */
+.advantages-section{
+
+}
+.advantages-section__info-block{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3.313rem;
+}
+.advantages-img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.advantages-section__info-block__description{
+    padding-top: 3.313rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.points-block{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    
+}
+.points-block__info-block{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    border-bottom: 0.063rem solid #55565A;
+    padding-bottom: 2.5rem;
+}
+.points-block__info-block:last-child {
+    border-bottom: none;
+}
+.points-block__info-block svg{
+    max-width: 3.625rem;
+    width: 100%;
+}
+
+.points-block__info-block__text{
+    max-width: 34rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* ------------- FORM -------- */
+.form-section{
+    padding-right: 10.188rem;
+}
+.form-section__container{
+    background-color: white;
+    border-radius: 1.875rem;
+    border: 0.125rem solid #D5C9BE;
+    display: flex;
+    gap: 4.469rem;
+    overflow: hidden;
+}
+.form-section__container .form-block{
+    padding: 4.469rem 0rem 4.469rem 8.375rem;
+    width: 100%;
+}
+.form-section__container__info-block{
+    display: flex;
+    flex-direction: column;
+    gap: 2.813rem;
+}
+.form-section__container__info-block__text{
+    font-size: 3.375rem;
+    color: #38535D;
+    max-width: 48.375rem;
+    width: 100%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.625rem;
+    max-width: 48.813rem;
+    width: 100%;
+}
+.form .info-block{
+    display: flex;
+    flex-direction: column;
+    gap: 0.813rem;
+}
+.form .lab-name{
+   border-radius: 0.25rem;
+   border: 0.125rem solid #D6D6D6;
+   max-width: 48.813rem;
+   width: 100%;
+}
+.form .input{
+    padding: 0.906rem 2.385rem 0.906rem 2.385rem;
+    font-size: 1.5rem;
+    color: #55565A;
+    width: 100%;
+    border: none;
+}
+.policy{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.checkbox{
+    appearance: none; 
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    border-radius:0.25rem;
+    border: 0.125rem solid #405D65;
+    position: relative;
+}
+.checkbox:checked::after {
+    content: '✔';  
+    position: absolute;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    background-color: #405D65;
+  }
+  
+  .checkbox:hover {
+    border-color: #6a7e85; 
+  }
+.policy-text{
+    font-size: 1.188rem;
+    color: #55565A;
+}
+.form-btn{
+    padding: 2rem 0;
+    width: 100%;
+    border-radius: 0.25rem;
+    background-color: #282829;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.form-section__container__img-block{
+    position: relative;
+    width: 90%;
+}
+.form-img-ab{
+    position: absolute;
+    height: 100%;
+    object-fit: contain;
+    left: -4rem;
+}
+.form-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer{
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-bottom: 3.75rem;
+}
+.footer__nav{
+    display: flex;
+    align-items: center;
+    gap: 3.75rem;
+    justify-content: center;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding: 2.5rem 0;
+    border-top: .125rem solid #D5C9BE;
+    border-bottom: .125rem solid #D5C9BE;
+    flex-wrap: wrap;
+}
+.footer-block{
+    padding-right: 10.188rem;
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.footer__container__info-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer__container__info-block__social{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.icon-social{
+    cursor: pointer;
+}
+.footer__container__policy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer__container__policy .text{
+    font-size: 1.25rem;
+    color: #FFFFFF;
+}
+.footer__container__policy a{
+    color: #D5C9BE;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
